@@ -30,7 +30,10 @@ app.use((req, res, next) => {
     res.status(404).render('404',{pageTitle:"404 Page not found"})
 });
 
-const PORT = 1000;
-app.listen(PORT, () => {
-    console.log(`server running on address address http://localhost:${PORT}`);
-});
+//const PORT = 1000;
+//app.listen(PORT, () => {
+//    console.log(`server running on address address http://localhost:${PORT}`);
+//});
+module.exports = app;
+
+
